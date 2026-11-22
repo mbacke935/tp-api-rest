@@ -171,3 +171,4 @@ La suite comprend :
 * **Hachage BCrypt préservé** : un `PUT /api/users/{id}` sans champ `password` conserve le hash existant. Un `PUT` avec `"password": null` retourne explicitement `400`.
 * **Révocation dynamique des rôles** : le filtre JWT (`JwtAuthenticationFilter`) recharge le compte en base à chaque requête. La modification ou suppression d'un compte prend effet immédiatement sans attendre l'expiration du jeton.
 # tp-api-rest
+# tp-api-rest
