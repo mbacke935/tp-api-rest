@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: tp-api-rest
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+
+app:
+  jwt:
+    secret-base64: ${JWT_SECRET_BASE64}
+    ttl-seconds: ${JWT_TTL_SECONDS:900}
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

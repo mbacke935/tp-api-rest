@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: tp-api-rest-test
+  datasource:
+    url: ${TEST_DB_URL:jdbc:postgresql://localhost:5432/tp_rest_test}
+    username: ${TEST_DB_USERNAME:tp_api}
+    password: ${TEST_DB_PASSWORD:tp_api_test_pwd}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+app:
+  jwt:
+    # Clé de test uniquement : 44 octets aléatoires encodés en Base64 (> 32 octets requis)
+    secret-base64: ${TEST_JWT_SECRET_BASE64:dGVzdFNlY3JldEtleUZvclRlc3RzT25seVRoaXNJc05vdFByb2R1Y3Rpb24=}
+    ttl-seconds: 60
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
