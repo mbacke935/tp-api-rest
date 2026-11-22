@@ -3,6 +3,7 @@
 * **Établissement :** Université Cheikh Ahmadoul Khadim (UCAK) — Département Informatique (L3)
 * **Projet :** `tp-api-rest` (Spring Boot 3.4.3, Java 21, Maven, PostgreSQL)
 * **Date :** 22 novembre 2026
+* **Etudiant: Mohamed Mbacke L3 Développement d'Applications Réparties (DAR)
 
 ---
 
